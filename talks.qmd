@@ -1,0 +1,43 @@
+---
+title: "Talks & posters"
+---
+
+## Talks
+
+::: {.talk-title}
+"Illuminating the Disc and Corona: Geometric Models of MAXI J1348−630"
+:::
+
+::: {.dated}
+- [Jan 2027]{.when} **NewAthena Science Working Group 2 Meeting**, ESA/ESTEC, Noordwijk [Upcoming]{.tag} [Abstract submitted]{.sub}
+- [Sep 2026]{.when} **New Results in X-ray Astronomy & NewAthena**, University of Leicester
+- [Jul 2026]{.when} **National Astronomy Meeting (NAM 2026)**, University of Birmingham
+- [Jun 2026]{.when} **Bath Bristol Exeter Cardiff Student Seminar (BBECSS)**, University of Bristol
+- [Apr 2026]{.when} **ISSI International Team workshop**, Bern [Maximizing the Potential of X-ray Polarimetric Data to Understand Accreting BHs]{.sub}
+:::
+
+## Posters
+
+::: {.talk-title}
+"Exploring Transient Relativistic X-ray Absorption Features in IRAS 13224−3809"
+:::
+
+::: {.dated}
+- [Sep 2025]{.when} **New Results in X-ray Astronomy & NewAthena**, University of Bristol
+- [Jul 2025]{.when} **National Astronomy Meeting (NAM 2025)**, Durham University [+ flash talk]{.tag}
+- [Jun 2025]{.when} **Vasto Accretion Meeting: AGN**, Vasto, Italy [+ flash talk]{.tag}
+:::
+
+## Meetings attended
+
+::: {.dated}
+- [Apr 2026]{.when} RAS Specialist Discussion Meeting: *Feeling Strong Gravity*, Bristol
+- [Mar 2026]{.when} ISSI-Beijing International Team meeting, Beijing
+- [Dec 2025]{.when} First AGN UK Community Meeting, University of Hertfordshire
+- [Oct 2025]{.when} RAS Specialist Discussion Meeting: *AGN-Driven Multiphase Outflows*, London
+- [Oct 2024]{.when} RAS Specialist Discussion Meeting: *Black Holes and AGN in the Era of EHT, JWST and Rubin*, London
+:::
+
+## Group presentations
+
+I present regularly at the Bristol Black Hole Journal Club, the astrophysics group lunch meetings (preprints and progress updates) and the Astrophysics Developer Group (Manim, Advent of Code).

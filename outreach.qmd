@@ -1,0 +1,27 @@
+---
+title: "Outreach & service"
+---
+
+## Outreach
+
+I'm on the organising committee of [Astronomy on Tap Bristol](https://astronomyontap.org/locations/bristol-uk/), which runs monthly astronomy talks in a pub.
+
+::: {.dated}
+- [Aug 2026]{.when} **"Eclipses Past, Present, and Future"**, Astronomy on Tap Bristol [Public talk the week after the 12 August total solar eclipse]{.sub}
+- [2026]{.when} **Public telescope viewing**, Royal Fort Gardens, during the Bristol Light Festival
+- [Mar 2025]{.when} **Partial solar eclipse**, solar telescope viewing for the public
+- [2023–]{.when} **University open days**, School of Physics [Promoting astrophysics at Bristol to prospective students]{.sub}
+:::
+
+## Organising
+
+::: {.dated}
+- [2026–]{.when} Organiser, Astrophysics Developer Group, University of Bristol
+- [2026–]{.when} Organiser, Black Hole Journal Club, University of Bristol
+- [2026]{.when} Co-organiser, Bath Bristol Exeter Cardiff Student Seminar (BBECSS)
+- [2025]{.when} Local Organising Committee, New Results in X-ray Astronomy & NewAthena, Bristol
+:::
+
+## Memberships
+
+Fellow of the Royal Astronomical Society.

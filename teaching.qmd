@@ -1,0 +1,11 @@
+---
+title: "Teaching & supervision"
+---
+
+::: {.dated}
+- [Summer 2026]{.when} **Summer project supervisor** [I designed and supervised an 8-week undergraduate project testing General Relativity with the Johannsen metric in Gradus.jl. Funded by an RAS Undergraduate Bursary and the University of Bristol.]{.sub}
+- [2025–]{.when} **General Relativity** (4th year), teaching assistant [Problem classes and coursework marking]{.sub}
+- [2026–]{.when} **Galaxies**, coursework marking
+- [2024–2026]{.when} **First-year physics laboratories**, demonstrator [Supporting students through experiments; marking lab books and formal reports]{.sub}
+- [2023–2024]{.when} **Online tutor**, A-level and GCSE Physics and Maths
+:::

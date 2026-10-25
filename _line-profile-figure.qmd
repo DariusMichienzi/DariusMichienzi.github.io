@@ -1,0 +1,80 @@
+::: {.figure-card}
+
+[Placeholder data]{.placeholder-note}
+
+#### Fe Kα line profiles for different coronal geometries
+
+```{=html}
+<div id="fe-line" class="fe-line">
+  <div class="fe-controls" role="group" aria-label="Corona geometry"></div>
+  <svg viewBox="0 0 640 360" role="img" aria-label="Fe K-alpha line profiles"></svg>
+</div>
+<script>
+// Reads two-column text files (energy in keV, flux) from data/line-profiles/.
+// To add a geometry, add a file and an entry below. Lines starting with # are ignored.
+(function () {
+  const GEOMS = [
+    { key: "lamppost", label: "Lamppost", colour: "#2B47C9" },
+    { key: "ring",     label: "Ring",     colour: "#C26A12" },
+    { key: "disc",     label: "Disc",     colour: "#1E8C7A" }
+  ];
+  const XMIN = 3, XMAX = 8, E0 = 6.4;
+  const root = document.getElementById("fe-line");
+  const svg = root.querySelector("svg"), controls = root.querySelector(".fe-controls");
+  const NS = "http://www.w3.org/2000/svg";
+  const W = 640, H = 360, m = { l: 84, r: 16, t: 18, b: 56 };
+  const pw = W - m.l - m.r, ph = H - m.t - m.b;
+  const x = e => m.l + (e - XMIN) / (XMAX - XMIN) * pw;
+  const y = f => m.t + (1 - f / 1.05) * ph;
+  const el = (tag, attrs, parent = svg) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    parent.appendChild(e); return e;
+  };
+  const text = (str, attrs) => { const t = el("text", attrs); t.textContent = str; return t; };
+
+  // Axes and grid
+  for (let e = 3; e <= 8; e += 0.5) {
+    el("line", { x1: x(e), x2: x(e), y1: m.t, y2: m.t + ph, class: "grid" });
+    if (Number.isInteger(e)) text(e, { x: x(e), y: m.t + ph + 22, "text-anchor": "middle", class: "tick" });
+  }
+  for (let f = 0; f <= 1.0001; f += 0.25) {
+    el("line", { x1: m.l, x2: m.l + pw, y1: y(f), y2: y(f), class: "grid" });
+    text(f.toFixed(2), { x: m.l - 8, y: y(f) + 4, "text-anchor": "end", class: "tick" });
+  }
+  text("Observed energy (keV)", { x: m.l + pw / 2, y: H - 6, "text-anchor": "middle", class: "axis" });
+  text("Flux (normalised)", { x: 18, y: m.t + ph / 2, "text-anchor": "middle", class: "axis",
+                              transform: `rotate(-90 18 ${m.t + ph / 2})` });
+  el("line", { x1: x(E0), x2: x(E0), y1: m.t, y2: m.t + ph, class: "rest" });
+  text("6.4 keV", { x: x(E0) + 6, y: m.t + 16, class: "tick" });
+
+  const parse = txt => txt.split("\n")
+    .filter(l => l.trim() && !l.trim().startsWith("#"))
+    .map(l => l.trim().split(/[\s,]+/).map(Number))
+    .filter(([e, f]) => isFinite(e) && isFinite(f));
+
+  GEOMS.forEach(g => {
+    const id = "fe-" + g.key;
+    const lab = document.createElement("label");
+    lab.innerHTML = `<input type="checkbox" id="${id}" checked> <span class="swatch" style="background:${g.colour}"></span>${g.label}`;
+    controls.appendChild(lab);
+    fetch(`data/line-profiles/${g.key}.txt`).then(r => r.ok ? r.text() : Promise.reject(r.status))
+      .then(txt => {
+        const rows = parse(txt).filter(([e]) => e >= XMIN && e <= XMAX);
+        const peak = Math.max(...rows.map(r => r[1])) || 1;
+        const d = rows.map(([e, f], i) => `${i ? "L" : "M"}${x(e).toFixed(1)},${y(f / peak).toFixed(1)}`).join("");
+        const path = el("path", { d, fill: "none", stroke: g.colour, "stroke-width": 2.2, "stroke-linejoin": "round" });
+        const box = lab.querySelector("input");
+        box.addEventListener("change", () => { path.style.display = box.checked ? "" : "none"; });
+      })
+      .catch(() => { lab.title = "Could not load " + g.key + ".txt"; lab.style.opacity = 0.4; });
+  });
+})();
+</script>
+```
+
+::: {.caption}
+The iron line is broadened and skewed by Doppler shifts and gravitational redshift close to the black hole. Changing the shape of the corona changes how strongly the inner disc is lit, which reshapes the red wing of the line. These curves are placeholders from a simple toy model; they will be replaced with full general-relativistic calculations.
+:::
+
+:::

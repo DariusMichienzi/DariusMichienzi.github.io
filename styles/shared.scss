@@ -1,0 +1,90 @@
+/*-- scss:rules --*/
+// Rules shared by light and dark themes (colours come from each theme's variables)
+
+h2 {
+  font-family: $font-family-monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  border-bottom: none !important;
+  margin-top: 2.5rem;
+}
+
+.lede {
+  font-family: $headings-font-family;
+  font-size: 1.45rem;
+  line-height: 1.45;
+  max-width: 34ch;
+  em { color: $primary; }
+}
+
+// Dated lists: date in a narrow mono column
+.dated ul { list-style: none; padding-left: 0; }
+.dated li {
+  position: relative;
+  padding: 0.6rem 0 0.6rem 8.5rem;
+  border-bottom: 1px solid $border-color;
+  > p { margin: 0; }
+}
+.dated li:last-child { border-bottom: none; }
+.dated .when { position: absolute; left: 0; top: 0.75rem; }
+.when {
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-variant-numeric: tabular-nums;
+}
+.sub { display: block; opacity: 0.75; font-size: 0.93rem; }
+.tag {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $primary;
+  margin-left: 0.4rem;
+}
+@media (max-width: 600px) {
+  .dated li { padding-left: 0; }
+  .dated .when { position: static; display: block; }
+}
+
+.talk-title { font-family: $headings-font-family; font-style: italic; font-size: 1.1rem; }
+
+.figure-card {
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 1rem 1.25rem 0.75rem;
+  margin: 1.5rem 0;
+}
+.figure-card .caption { font-size: 0.85rem; opacity: 0.75; }
+.placeholder-note {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #C26A12;
+}
+
+.chips span {
+  display: inline-block;
+  font-family: $font-family-monospace;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.3rem 0.3rem 0;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+}
+
+.banner img { width: 100%; border-radius: 6px; }
+
+// Fe line figure
+.fe-line svg { width: 100%; height: auto; display: block; }
+.fe-line .grid { stroke: $border-color; stroke-width: 1; }
+.fe-line .rest { stroke: $body-color; stroke-opacity: 0.35; stroke-dasharray: 4 4; }
+.fe-line .tick, .fe-line .axis { fill: $body-color; fill-opacity: 0.7; font-family: $font-family-monospace; font-size: 15px; }
+.fe-line .axis { font-size: 16px; }
+.fe-controls { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.fe-controls label { cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; }
+.fe-controls .swatch { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }

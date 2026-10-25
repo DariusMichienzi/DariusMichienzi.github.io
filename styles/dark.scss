@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+$primary:        #93A6FF;
+$body-bg:        #0F1117;
+$body-color:     #E5E7EE;
+$link-color:     #93A6FF;
+$navbar-bg:      #0F1117;
+$navbar-fg:      #E5E7EE;
+$footer-bg:      #0F1117;
+$border-color:   #2A2E3A;
+
+$font-family-sans-serif: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family:   "Spectral", Georgia, serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, Menlo, monospace;
+$headings-font-weight:   600;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');

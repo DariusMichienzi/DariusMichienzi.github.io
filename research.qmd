@@ -1,0 +1,38 @@
+---
+title: "Research"
+---
+
+My research is on X-ray reflection from accreting black holes, in both X-ray binaries and active galactic nuclei. Close to the black hole, hard X-rays from the hot corona illuminate the accretion disc, which reflects them and imprints features such as the broad iron Kα line. The shape of that line depends on where the disc is lit, and therefore on the geometry of the corona.
+
+## Coronal geometry and disc illumination in MAXI J1348−630
+
+::: {.chips}
+[Current]{} [NuSTAR]{} [Gradus.jl · Kerrz]{} [Paper in preparation]{}
+:::
+
+Recent X-ray polarimetry with IXPE has started to constrain the shape of black hole coronae. I model how lamppost, ring and disc-shaped coronae illuminate the accretion disc, and how this changes the reflection spectrum and the Fe Kα line profile. I fit these models to NuSTAR observations of the black hole X-ray binary MAXI J1348−630, using a NuSTAR data-reduction pipeline I developed. The aim is a general method that works for any axisymmetric corona and can be applied across many sources.
+
+With Dr Jiachen Jiang (Warwick). The modelling builds on tools by Dr Fergus Baker (Newcastle). Computing on Isambard 3 and Isambard-AI.
+
+{{< include _line-profile-figure.qmd >}}
+
+## Relativistic absorption in IRAS 13224−3809
+
+::: {.chips}
+[2024–2025]{} [XMM-Newton]{}
+:::
+
+Broad absorption features in AGN spectra are often interpreted as ultra-fast outflows. I tested an alternative: absorption by material co-rotating close to the black hole, broadened by relativistic effects. I presented this work as a poster at the Vasto Accretion Meeting, NAM and New Results in X-ray Astronomy in 2025.
+
+## Earlier work
+
+For my MSci I studied how optical selection affects X-ray scaling relations for galaxy clusters observed with eROSITA, supervised by Prof. Ben Maughan.
+
+## Collaborations
+
+- Early-career member of the ISSI-Beijing International Team *Connecting Observations and Numerical Simulations: A New Paradigm for Black Hole Accretion Studies*.
+- Participant in the ISSI (Bern) International Team workshop *Maximizing the Potential of X-ray Polarimetric Data to Understand Accreting BHs*.
+
+## Code
+
+My code is on [GitHub](https://github.com/DariusMichienzi). I write mainly in Julia and contribute to [SpectralFitting.jl](https://github.com/fjebaker/SpectralFitting.jl).

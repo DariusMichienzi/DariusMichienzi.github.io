@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - data/
+    - files/
+
+website:
+  title: "Darius Michienzi"
+  site-url: "https://dariusmichienzi.github.io"
+  description: "PhD researcher in black hole astrophysics at the University of Bristol."
+  favicon: images/favicon.png
+  open-graph: true
+  page-navigation: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - research.qmd
+      - publications.qmd
+      - href: talks.qmd
+        text: Talks
+      - href: teaching.qmd
+        text: Teaching
+      - href: outreach.qmd
+        text: Outreach
+      - cv.qmd
+    right:
+      - icon: github
+        href: https://github.com/DariusMichienzi
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/dariusmichienzi/
+        aria-label: LinkedIn
+      - text: "ORCID"
+        href: https://orcid.org/0009-0003-0123-9718
+  page-footer:
+    left: "© 2026 Darius Michienzi"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/light.scss, styles/shared.scss]
+      dark: [cosmo, styles/dark.scss, styles/shared.scss]
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true

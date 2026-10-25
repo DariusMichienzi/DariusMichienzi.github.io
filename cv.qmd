@@ -1,0 +1,29 @@
+---
+title: "CV"
+---
+
+[Download my CV (PDF)](files/Michienzi_CV.pdf){.btn .btn-primary}
+
+## Education
+
+::: {.dated}
+- [2024–2028]{.when} **PhD in Astrophysics**, University of Bristol [Supervisor: Prof. Andrew Young · STFC studentship]{.sub}
+- [2019–2023]{.when} **MSci Physics with Astrophysics**, University of Bristol, First Class Honours [Project: optical selection and X-ray scaling relations of galaxy clusters with eROSITA]{.sub}
+:::
+
+## Funding & awards
+
+::: {.dated}
+- [2024–2028]{.when} STFC PhD Studentship
+- [2026]{.when} RAS Undergraduate Bursary (to fund a summer project I designed and supervised)
+- [2025, 2026]{.when} Peter Bye Travel Grant, University of Bristol
+:::
+
+## Skills
+
+::: {.dated}
+- [Code]{.when} Julia, Python · Git, Linux, LaTeX, Manim
+- [X-ray analysis]{.when} HEASoft, XSPEC, SAS, NuSTARDAS
+- [Modelling]{.when} GR ray tracing and reflection modelling (Gradus.jl, Kerrz)
+- [Languages]{.when} English (native), Italian (learning)
+:::

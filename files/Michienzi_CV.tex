@@ -1,0 +1,226 @@
+% ============================================================
+%  CV — Darius Michienzi
+%  Compiles with pdfLaTeX (Overleaf default). Standard packages only.
+% ============================================================
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Page and fonts ----------
+\usepackage[a4paper,margin=2cm,top=1.8cm,bottom=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}            % clean serif text font
+\usepackage[scaled=0.92]{helvet} % sans for headings
+\usepackage{microtype}
+
+% ---------- Layout tools ----------
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{muted}{HTML}{555555}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.05}
+
+% Section headings: small caps sans, accent colour, rule underneath
+\titleformat{\section}
+  {\sffamily\large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\vspace{-0.6em}{\color{accent}\rule{\textwidth}{0.6pt}}]
+\titlespacing*{\section}{0pt}{1.1em}{0.6em}
+
+\titleformat{\subsection}
+  {\sffamily\normalsize\bfseries\color{muted}}
+  {}{0pt}{}
+\titlespacing*{\subsection}{0pt}{0.6em}{0.3em}
+
+% Tight bullet lists
+\setlist[itemize]{leftmargin=1.1em,topsep=1pt,itemsep=0pt,parsep=0pt,label={\color{muted}\textbullet}}
+
+% Footer: name and page numbers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Darius Michienzi --- Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\color{muted}\thepage\ of \pageref{LastPage}}
+
+% ---------- Entry macros ----------
+% \entry{date}{main text (may contain line breaks / lists)}
+\newcommand{\datewidth}{2.7cm}
+\newcommand{\entry}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\datewidth}\raggedright\leavevmode\small\color{muted}\strut#1\end{minipage}%
+  \hspace{0.4cm}%
+  \begin{minipage}[t]{\dimexpr\textwidth-\datewidth-0.4cm\relax}\strut#2\strut\end{minipage}%
+  \par\vspace{0.3em}}
+
+% \talk{date}{title of meeting}{place}{note}
+\newcommand{\talk}[4]{\entry{#1}{\textbf{#2}, #3\ifblank{#4}{}{\ \textcolor{muted}{(#4)}}}}
+
+% ============================================================
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\sffamily\fontsize{24}{28}\selectfont\bfseries Darius Michienzi}\\[0.4em]
+  {\sffamily\color{muted} PhD Researcher in Black Hole Astrophysics}\\[0.5em]
+  \small
+  Astrophysics Group, School of Physics, University of Bristol, UK
+  \quad$\cdot$\quad \href{https://orcid.org/0009-0003-0123-9718}{ORCID: 0009-0003-0123-9718}\\[0.2em]
+  \href{mailto:darius.michienzi@bristol.ac.uk}{darius.michienzi@bristol.ac.uk}
+  \quad$\cdot$\quad
+  \href{https://github.com/DariusMichienzi}{github.com/DariusMichienzi}
+  \quad$\cdot$\quad
+  \href{https://www.linkedin.com/in/dariusmichienzi/}{linkedin.com/in/dariusmichienzi}
+\end{center}
+
+% ---------- Research interests ----------
+\section{Research Interests}
+X-ray reflection from accreting black holes, in both X-ray binaries and AGN.
+I study how the geometry of the corona shapes the illumination of the accretion
+disc and, in turn, the observed reflection spectrum, motivated by recent
+IXPE polarimetry constraints. I combine general-relativistic ray tracing with
+X-ray spectroscopy, and aim to develop a general method applicable to any
+axisymmetric coronal geometry across a broad range of sources.
+
+% ---------- Education ----------
+\section{Education}
+\entry{Sep 2024 -- \\ Mar 2028 (exp.)}{%
+  \textbf{PhD in Astrophysics}, University of Bristol\\
+  Supervisor: Prof.\ Andrew Young \quad$\cdot$\quad Funded by an STFC studentship}
+
+\entry{2019 -- 2023}{%
+  \textbf{MSci Physics with Astrophysics}, University of Bristol --- \textbf{First Class Honours}\\
+  Independent final-year project: \emph{Exploring the effect of optical selection on X-ray
+  scaling relations for galaxy clusters using the eROSITA telescope}\\
+  Supervisor: Prof.\ Ben Maughan}
+
+% ---------- Research experience ----------
+\section{Research Experience}
+\entry{2025 -- present}{%
+  \textbf{Coronal geometry and disc illumination in MAXI J1348$-$630}
+  \begin{itemize}
+    \item Modelling disc illumination profiles for lamppost, ring and disc coronae,
+          building towards a general method for arbitrary axisymmetric geometries.
+    \item Fitting the resulting reflection spectra to NuSTAR observations of the black hole
+          X-ray binary MAXI J1348$-$630, using a NuSTAR reduction pipeline I developed.
+    \item GR ray tracing with Gradus.jl and Kerrz (Julia); HPC on Isambard 3 / Isambard-AI.
+    \item Collaborators: Dr Jiachen Jiang (Warwick), Dr Fergus Baker (Newcastle).
+          Paper in preparation.
+  \end{itemize}}
+
+\entry{2024 -- 2025}{%
+  \textbf{Relativistic absorption as an alternative to ultra-fast outflows in AGN}
+  \begin{itemize}
+    \item Tested whether broad absorption features usually attributed to ultra-fast outflows
+          can instead arise from relativistically broadened absorption by material
+          co-rotating close to the black hole.
+    \item Archival XMM-Newton data of IRAS 13224$-$3809, using an XMM-Newton reduction pipeline I developed.
+  \end{itemize}}
+
+% ---------- Publications ----------
+\section{Publications}
+\entry{In preparation}{%
+  \textbf{Michienzi, D.}, Young, A.~J., Jiang, J., et al.,
+  \emph{Coronal geometry and disc illumination in MAXI J1348$-$630} (working title)}
+
+% ---------- Talks ----------
+\section{Talks and Posters}
+\subsection{Contributed talks}
+\emph{``Illuminating the Disc and Corona: Geometric Models of MAXI J1348$-$630''}\par\vspace{0.3em}
+\talk{Sep 2026}{New Results in X-ray Astronomy \& NewAthena 2026}{University of Leicester}{}
+\talk{Jul 2026}{National Astronomy Meeting (NAM 2026)}{University of Birmingham}{}
+\talk{Jun 2026}{Bath Bristol Exeter Cardiff Student Seminar (BBECSS)}{University of Bristol}{}
+\talk{Apr 2026}{ISSI International Team workshop, \emph{Maximizing the Potential of X-ray Polarimetric Data to Understand Accreting BHs}}{ISSI, Bern, Switzerland}{}
+
+\subsection{Posters}
+\emph{``Exploring Transient Relativistic X-ray Absorption Features in IRAS 13224$-$3809''}\par\vspace{0.3em}
+\talk{Sep 2025}{New Results in X-ray Astronomy \& NewAthena 2025}{University of Bristol}{}
+\talk{Jul 2025}{National Astronomy Meeting (NAM 2025)}{Durham University}{with flash talk}
+\talk{Jun 2025}{Vasto Accretion Meeting: AGN (VAM 2025)}{Vasto, Italy}{with flash talk}
+
+\subsection{Upcoming}
+\talk{Jan 2027}{NewAthena Science Working Group 2 Meeting}{ESA/ESTEC, Noordwijk, Netherlands}{abstract submitted}
+
+\subsection{Collaborations and meetings attended}
+\entry{2025 -- present}{\textbf{ISSI-Beijing International Team}, \emph{Connecting Observations and Numerical
+  Simulations: A New Paradigm for Black Hole Accretion Studies} --- early-career member;
+  in-person team meeting, ISSI-BJ, Beijing, China (Mar 2026)}
+\talk{Apr 2026}{RAS Specialist Discussion Meeting: \emph{Feeling Strong Gravity}}{Bristol}{}
+\talk{Dec 2025}{First AGN UK Community Meeting}{University of Hertfordshire}{}
+\talk{Oct 2025}{RAS Specialist Discussion Meeting: \emph{AGN-Driven Multiphase Outflows}}{London}{}
+\talk{Oct 2024}{RAS Specialist Discussion Meeting: \emph{Black Holes and AGN in the Era of EHT, JWST and Rubin}}{London}{}
+
+\subsection{Internal presentations (University of Bristol)}
+\entry{2024 -- present}{Regular presenter at the Black Hole Journal Club (approx.\ every 8 weeks), group
+  lunch meetings (preprints and progress updates) and the Astrophysics Developer Group
+  (Manim, Advent of Code).}
+
+% ---------- Funding ----------
+\section{Funding and Awards}
+\entry{2024 -- 2028}{\textbf{STFC PhD Studentship}, University of Bristol}
+\entry{2026}{\textbf{RAS Undergraduate Bursary}, with University of Bristol co-funding --- secured
+  to fund a summer research project I designed and supervised}
+\entry{2025, 2026}{\textbf{Peter Bye Travel Grant}, University of Bristol (twice), for NAM 2025 and NAM 2026}
+\entry{2025 -- present}{\textbf{Computing time}, Isambard 3 / Isambard-AI, via allocation of Prof.\ A.~Young}
+
+% ---------- Teaching ----------
+\section{Teaching and Supervision}
+\entry{Summer 2026}{%
+  \textbf{Primary supervisor}, 8-week undergraduate summer research project, University of Bristol\\
+  Designed the project \emph{Deviations from the Kerr metric as a test of General Relativity},
+  using the Johannsen metric in Gradus.jl; supervised a 3rd-year undergraduate.}
+\entry{2025 -- present}{%
+  \textbf{Teaching assistant, General Relativity} (4th year), University of Bristol\\
+  Problem-class support; marked all coursework.}
+\entry{2026 -- present}{%
+  \textbf{Coursework marker, Galaxies} (undergraduate), University of Bristol}
+\entry{2024 -- 2026}{%
+  \textbf{Laboratory demonstrator, 1st-year Physics Laboratories}, University of Bristol\\
+  4.5 hrs/week in term time; supported students through experiments; marked lab books and formal reports.}
+\entry{2023 -- 2024}{%
+  \textbf{Online personal tutor} (part-time), A-level and GCSE Physics and Mathematics\\
+  One-to-one weekly sessions with 6--8 students.}
+
+% ---------- Outreach ----------
+\section{Outreach and Public Engagement}
+\entry{Jul 2026 -- present}{\textbf{Organising committee, Astronomy on Tap Bristol} ---
+  monthly public astronomy talks; involved in organising each event.}
+\entry{Aug 2026}{\textbf{Public talk}, \emph{``Eclipses Past, Present, and Future''}, Astronomy on Tap Bristol}
+\entry{2025 -- 2026}{\textbf{Public observing}: solar telescope viewing for the partial solar eclipse
+  (Mar 2025); telescope viewing for passers-by in Royal Fort Gardens during the Bristol Light Festival (2026)}
+\entry{2023 -- present}{\textbf{University open days}, School of Physics, Bristol (2023, 2024, Oct 2026) ---
+  promoting astrophysics to prospective students, demonstrations and tours}
+
+% ---------- Service ----------
+\section{Leadership and Service}
+\entry{Sep 2026 -- present}{\textbf{Organiser, Astrophysics Developer Group}, University of Bristol}
+\entry{Mar 2026 -- present}{\textbf{Organiser, Black Hole Journal Club}, University of Bristol}
+\entry{2026}{\textbf{Co-organiser, BBECSS 2026} (Bath Bristol Exeter Cardiff Student Seminar)}
+\entry{2025}{\textbf{Local Organising Committee}, New Results in X-ray Astronomy \& NewAthena 2025, Bristol}
+
+% ---------- Skills ----------
+\section{Skills}
+\entry{Programming}{Julia (primary), Python}
+\entry{X-ray analysis}{HEASoft, XSPEC, SAS (XMM-Newton), NuSTARDAS}
+\entry{Modelling}{GR ray tracing and reflection modelling (Gradus.jl, Kerrz); spectral fitting}
+\entry{Open source}{Contributor to SpectralFitting.jl}
+\entry{Tools}{Git, Linux, LaTeX, Manim, HPC (Isambard 3 / Isambard-AI)}
+\entry{Languages}{English (native); Italian (basic, currently taking lessons)}
+
+% ---------- Other ----------
+\section{Memberships and Interests}
+\entry{Membership}{Fellow of the Royal Astronomical Society (FRAS)}
+\entry{Interests}{Programming puzzles (completed Advent of Code 2024 and 2025); science communication}
+
+\end{document}

@@ -1,0 +1,43 @@
+---
+title: "Darius Michienzi"
+subtitle: "PhD researcher · Astrophysics Group, University of Bristol"
+pagetitle: "Darius Michienzi"
+image: images/profile.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:darius.michienzi@bristol.ac.uk
+    - icon: github
+      text: GitHub
+      href: https://github.com/DariusMichienzi
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dariusmichienzi/
+    - icon: person-badge
+      text: ORCID
+      href: https://orcid.org/0009-0003-0123-9718
+    - icon: file-earmark-pdf
+      text: CV
+      href: files/Michienzi_CV.pdf
+---
+
+::: {.lede}
+I study the light that black holes reflect: how the shape of the hot *corona* decides where the accretion disc is lit, and what that does to the X-ray spectrum we see.
+:::
+
+I'm a third-year STFC-funded PhD student in the Astrophysics Group at the University of Bristol, supervised by Prof. Andrew Young. I work on X-ray reflection spectroscopy of accreting black holes, combining general-relativistic ray tracing in Julia with NuSTAR and XMM-Newton data. I expect to finish in March 2028.
+
+{{< include _line-profile-figure.qmd >}}
+
+## Recent
+
+::: {.dated}
+- [Jan 2027]{.when} Presenting at the NewAthena SWG2 meeting, ESA/ESTEC [Upcoming]{.tag}
+- [Sep 2026]{.when} Talk at New Results in X-ray Astronomy & NewAthena, Leicester
+- [Aug 2026]{.when} Public talk at Astronomy on Tap Bristol: "Eclipses Past, Present, and Future"
+- [Jul 2026]{.when} Talk at the National Astronomy Meeting (NAM 2026), Birmingham
+:::
