@@ -43,6 +43,8 @@ format:
     theme:
       light: [cosmo, styles/light.scss, styles/shared.scss]
       dark: [cosmo, styles/dark.scss, styles/shared.scss]
+    respect-user-color-scheme: true
+    include-after-body: pdf-new-tab.html
     toc: false
     smooth-scroll: true
     link-external-newwindow: true

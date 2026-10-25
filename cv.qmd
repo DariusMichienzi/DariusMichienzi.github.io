@@ -2,7 +2,7 @@
 title: "CV"
 ---
 
-[Download my CV (PDF)](files/Michienzi_CV.pdf){.btn .btn-primary}
+[Download my CV (PDF)](files/Michienzi_CV.pdf){.btn .btn-primary target="_blank" rel="noopener"}
 
 ## Education
 

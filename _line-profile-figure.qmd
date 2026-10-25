@@ -56,14 +56,14 @@
   GEOMS.forEach(g => {
     const id = "fe-" + g.key;
     const lab = document.createElement("label");
-    lab.innerHTML = `<input type="checkbox" id="${id}" checked> <span class="swatch" style="background:${g.colour}"></span>${g.label}`;
+    lab.innerHTML = `<input type="checkbox" id="${id}" checked> <span class="swatch swatch-${g.key}" style="background:${g.colour}"></span>${g.label}`;
     controls.appendChild(lab);
     fetch(`data/line-profiles/${g.key}.txt`).then(r => r.ok ? r.text() : Promise.reject(r.status))
       .then(txt => {
         const rows = parse(txt).filter(([e]) => e >= XMIN && e <= XMAX);
         const peak = Math.max(...rows.map(r => r[1])) || 1;
         const d = rows.map(([e, f], i) => `${i ? "L" : "M"}${x(e).toFixed(1)},${y(f / peak).toFixed(1)}`).join("");
-        const path = el("path", { d, fill: "none", stroke: g.colour, "stroke-width": 2.2, "stroke-linejoin": "round" });
+        const path = el("path", { d, class: "fe-path-" + g.key, fill: "none", stroke: g.colour, "stroke-width": 2.2, "stroke-linejoin": "round" });
         const box = lab.querySelector("input");
         box.addEventListener("change", () => { path.style.display = box.checked ? "" : "none"; });
       })

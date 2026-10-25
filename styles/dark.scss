@@ -15,3 +15,11 @@ $headings-font-weight:   600;
 
 /*-- scss:rules --*/
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+// Brighter line colours for the Fe line figure on dark backgrounds
+.fe-path-lamppost { stroke: #8FA2FF; }
+.swatch-lamppost { background: #8FA2FF !important; }
+.fe-path-ring { stroke: #F0A452; }
+.swatch-ring { background: #F0A452 !important; }
+.fe-path-disc { stroke: #4CC7AE; }
+.swatch-disc { background: #4CC7AE !important; }

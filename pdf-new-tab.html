@@ -1,0 +1,7 @@
+<script>
+// Open every PDF link (e.g. the CV) in a new tab
+document.querySelectorAll('a[href$=".pdf"]').forEach(a => {
+  a.setAttribute('target', '_blank');
+  a.setAttribute('rel', 'noopener');
+});
+</script>
