@@ -1,7 +1,5 @@
 ::: {.figure-card}
 
-[Placeholder data]{.placeholder-note}
-
 #### Fe Kα line profiles for different coronal geometries
 
 ```{=html}
@@ -42,7 +40,7 @@
     el("line", { x1: m.l, x2: m.l + pw, y1: y(f), y2: y(f), class: "grid" });
     text(f.toFixed(2), { x: m.l - 8, y: y(f) + 4, "text-anchor": "end", class: "tick" });
   }
-  text("Observed energy (keV)", { x: m.l + pw / 2, y: H - 6, "text-anchor": "middle", class: "axis" });
+  text("Rest Frame energy (keV)", { x: m.l + pw / 2, y: H - 6, "text-anchor": "middle", class: "axis" });
   text("Flux (normalised)", { x: 18, y: m.t + ph / 2, "text-anchor": "middle", class: "axis",
                               transform: `rotate(-90 18 ${m.t + ph / 2})` });
   el("line", { x1: x(E0), x2: x(E0), y1: m.t, y2: m.t + ph, class: "rest" });
@@ -74,7 +72,7 @@
 ```
 
 ::: {.caption}
-The iron line is broadened and skewed by Doppler shifts and gravitational redshift close to the black hole. Changing the shape of the corona changes how strongly the inner disc is lit, which reshapes the red wing of the line. These curves are placeholders from a simple toy model; they will be replaced with full general-relativistic calculations.
+The iron line is broadened and skewed by Doppler shifts and gravitational redshift close to the black hole. Changing the shape of the corona changes how strongly the inner disc is lit, which reshapes the red wing of the line.
 :::
 
 :::
