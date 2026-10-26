@@ -16,7 +16,7 @@
     { key: "ring",     label: "Ring",     colour: "#C26A12" },
     { key: "disc",     label: "Disc",     colour: "#1E8C7A" }
   ];
-  const XMIN = 3, XMAX = 8, E0 = 6.4;
+  const XMIN = 0, XMAX = 2, E0 = 1.0;
   const root = document.getElementById("fe-line");
   const svg = root.querySelector("svg"), controls = root.querySelector(".fe-controls");
   const NS = "http://www.w3.org/2000/svg";
