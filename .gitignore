@@ -2,9 +2,9 @@ _site/
 .quarto/
 *_files/
 .DS_Store
-*.aux
-*.log
-*.out
-*.fls
-*.fdb_latexmk
-*.synctex.gz
+files/*.aux
+files/*.log
+files/*.out
+files/*.fls
+files/*.fdb_latexmk
+files/*.synctex.gz

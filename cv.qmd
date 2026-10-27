@@ -8,7 +8,7 @@ title: "CV"
 
 ::: {.dated}
 - [2024–2028]{.when} **PhD in Astrophysics**, University of Bristol [Supervisor: Prof. Andrew Young · STFC studentship]{.sub}
-- [2019–2023]{.when} **MSci Physics with Astrophysics**, University of Bristol, First Class Honours [Project: optical selection and X-ray scaling relations of galaxy clusters with eROSITA]{.sub}
+- [2019–2023]{.when} **MSci Physics with Astrophysics**, University of Bristol, First Class Honours [Project: optical selection and X-ray scaling relations of galaxy clusters with eROSITA · [Report (PDF)](files/Michienzi_MSci_report.pdf)]{.sub}
 :::
 
 ## Funding & awards

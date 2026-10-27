@@ -32,7 +32,7 @@
   const text = (str, attrs) => { const t = el("text", attrs); t.textContent = str; return t; };
 
   // Axes and grid
-  for (let e = 3; e <= 8; e += 0.5) {
+  for (let e = 0; e <= 1.5; e += 0.5) {
     el("line", { x1: x(e), x2: x(e), y1: m.t, y2: m.t + ph, class: "grid" });
     if (Number.isInteger(e)) text(e, { x: x(e), y: m.t + ph + 22, "text-anchor": "middle", class: "tick" });
   }

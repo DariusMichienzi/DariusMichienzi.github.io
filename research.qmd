@@ -28,6 +28,8 @@ Broad absorption features in AGN spectra are often interpreted as ultra-fast out
 
 For my MSci I studied how optical selection affects X-ray scaling relations for galaxy clusters observed with eROSITA, supervised by Prof. Ben Maughan.
 
+[Read the project report (PDF)](files/Michienzi_MSci_report.pdf){.btn .btn-outline-primary .btn-sm}
+
 ## Collaborations
 
 - Early-career member of the ISSI-Beijing International Team *Connecting Observations and Numerical Simulations: A New Paradigm for Black Hole Accretion Studies*.
