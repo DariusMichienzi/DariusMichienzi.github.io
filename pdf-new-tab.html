@@ -1,7 +1,13 @@
 <script>
-// Open every PDF link (e.g. the CV) in a new tab
-document.querySelectorAll('a[href$=".pdf"]').forEach(a => {
-  a.setAttribute('target', '_blank');
-  a.setAttribute('rel', 'noopener');
+// Open PDFs (CV, MSci report) and all links to other websites in a new tab.
+// Covers the navbar icons, the buttons under the profile photo and page links.
+document.querySelectorAll('a[href]').forEach(a => {
+  const href = a.getAttribute('href');
+  const isPdf = /\.pdf($|[?#])/i.test(href);
+  const isExternal = a.host && a.host !== window.location.host && /^https?:/.test(a.protocol);
+  if (isPdf || isExternal) {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  }
 });
 </script>
