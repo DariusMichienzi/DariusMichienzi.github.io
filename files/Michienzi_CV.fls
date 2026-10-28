@@ -1,8 +1,8 @@
-PWD /Users/er19801/Documents/ Website/files
+PWD /Users/er19801/DariusMichienzi.github.io/files
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/er19801/Documents/ Website/files/Michienzi_CV.tex
+INPUT /Users/er19801/DariusMichienzi.github.io/files/Michienzi_CV.tex
 OUTPUT Michienzi_CV.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls

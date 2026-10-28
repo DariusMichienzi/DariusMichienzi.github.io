@@ -8,4 +8,4 @@ title: "Publications"
 - [In prep.]{.when} **Michienzi, D.**, Young, A. J., Jiang, J., et al. [Coronal geometry and disc illumination in MAXI J1348−630 (working title)]{.sub}
 :::
 
-A full list will link to [NASA ADS](https://ui.adsabs.harvard.edu/) and [ORCID](https://orcid.org/0009-0003-0123-9718) once papers are published.
+Full publication list on [NASA ADS](https://ui.adsabs.harvard.edu/public-libraries/hmp3dQ2qQLWARLEJTIT1ng) and [ORCID](https://orcid.org/0009-0003-0123-9718).

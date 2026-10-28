@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.18)  26 OCT 2026 18:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.18)  28 OCT 2026 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/er19801/Documents/ Website/files/Michienzi_CV.tex"
-(/Users/er19801/Documents/ Website/files/Michienzi_CV.tex
+**/Users/er19801/DariusMichienzi.github.io/files/Michienzi_CV.tex
+(/Users/er19801/DariusMichienzi.github.io/files/Michienzi_CV.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -387,17 +387,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 80.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 90.
+(Font)              scaled to size 11.03998pt on input line 92.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 90.
+(Font)              scaled to size 11.03998pt on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 102.
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 122.
+(Font)              <7> on input line 104.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 124.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.19998pt on input line 141.
+(Font)              scaled to size 9.19998pt on input line 143.
  [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] 
@@ -412,17 +412,17 @@ Package rerunfilecheck Info: File `Michienzi_CV.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  12713 strings out of 467525
- 200907 string characters out of 5418982
+ 200926 string characters out of 5418982
  674392 words of memory out of 5000000
  41310 multiletter control sequences out of 15000+600000
  673324 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1051b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1056b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Michienzi_CV.pdf (3 pages, 112265 bytes).
+Output written on Michienzi_CV.pdf (3 pages, 112342 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 147 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  21 named destinations out of 1000 (max. 500000)
  49801 words of extra memory for PDF output out of 51595 (max. 10000000)
 
