@@ -8,3 +8,4 @@ files/*.out
 files/*.fls
 files/*.fdb_latexmk
 files/*.synctex.gz
+/.quarto/

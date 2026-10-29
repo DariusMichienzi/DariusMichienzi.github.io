@@ -7,6 +7,8 @@ title: "Outreach & service"
 I'm on the organising committee of [Astronomy on Tap Bristol](https://astronomyontap.org/locations/bristol-uk/), which runs monthly astronomy talks in a pub.
 
 ::: {.dated}
+- [Apr 2027]{.when} **Invited talk on X-ray Astronomy**, Bristol Astronomical Society,[Upcoming]{.tag} 
+- [2027]{.when} **Guest Lecture**, University of Bristol,[Upcoming]{.tag} [Invited lecture to first year undergraduate students on my research]{.sub}
 - [Aug 2026]{.when} **"Eclipses Past, Present, and Future"**, Astronomy on Tap Bristol [Public talk the week after the 12 August total solar eclipse]{.sub}
 - [2026]{.when} **Public telescope viewing**, Royal Fort Gardens, during the Bristol Light Festival
 - [Mar 2025]{.when} **Partial solar eclipse**, solar telescope viewing for the public
