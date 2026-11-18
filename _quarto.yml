@@ -34,10 +34,11 @@ website:
         aria-label: LinkedIn
       - text: "ORCID"
         href: https://orcid.org/0009-0003-0123-9718
-      - text: "ADS"
-        href: https://ui.adsabs.harvard.edu/public-libraries/hmp3dQ2qQLWARLEJTIT1ng
+      - text: "SciX"
+        href: https://scixplorer.org/public-libraries/hmp3dQ2qQLWARLEJTIT1ng
   page-footer:
     left: "© 2026 Darius Michienzi"
+    center: '<span id="last-updated"></span>'
     right: "Built with [Quarto](https://quarto.org)"
 
 format:

@@ -21,8 +21,8 @@ about:
       text: ORCID
       href: https://orcid.org/0009-0003-0123-9718
     - icon: journal-text
-      text: ADS
-      href: https://ui.adsabs.harvard.edu/public-libraries/hmp3dQ2qQLWARLEJTIT1ng
+      text: SciX
+      href: https://scixplorer.org/public-libraries/hmp3dQ2qQLWARLEJTIT1ng
     - icon: file-earmark-pdf
       text: CV
       href: files/Michienzi_CV.pdf

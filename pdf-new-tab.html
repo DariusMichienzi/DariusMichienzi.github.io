@@ -10,4 +10,13 @@ document.querySelectorAll('a[href]').forEach(a => {
     a.setAttribute('rel', 'noopener');
   }
 });
+
+// "Last updated" date in the footer: the date GitHub Pages last published the site
+window.addEventListener('DOMContentLoaded', () => {
+  const lu = document.getElementById('last-updated');
+  const d = new Date(document.lastModified);
+  if (lu && !isNaN(d)) {
+    lu.textContent = 'Last updated ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  }
+});
 </script>
